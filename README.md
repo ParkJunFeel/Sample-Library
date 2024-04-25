@@ -1,24 +1,15 @@
 # Including in your project
+
 ### settings.gradle.kts
+dependencyResolutionManagement => repositories
 ```
-...
-dependencyResolutionManagement {
-    ...
-    repositories {
-        google()
-        mavenCentral()
-        ...
-        maven {
-            setUrl("https://jitpack.io")
-        }
-    }
+maven {
+    setUrl("https://jitpack.io")
 }
 ```
+
 ### build.gradle.kts (Module:app)
+dependencies
 ```
-...
-    dependencies {
-        ...
-        implementation ("com.github.ParkJunFeel:Sample-Library:1.0.0")
-    }
+implementation ("com.github.ParkJunFeel:Sample-Library:1.0.0")
 ```
